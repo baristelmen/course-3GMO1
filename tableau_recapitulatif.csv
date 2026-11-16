@@ -1,0 +1,15 @@
+﻿Schéma;Type;Ordre;A-stable;L-stable;|R(i)|;lim |R(-x)| (x -> infini);Conserve l'énergie de l'oscillateur;Disponible
+Euler explicite;explicite, pas fixe;1;;;;;;integrateurs.py
+Heun (RK2);explicite, pas fixe;2;;;;;;integrateurs.py
+RK4;explicite, pas fixe;4;;;;;;integrateurs.py
+Euler implicite;implicite, pas fixe;1;;;;;;integrateurs.py
+Crank-Nicolson;implicite, pas fixe;2;;;;;;integrateurs.py
+Point milieu;implicite, pas fixe;2;;;;;;integrateurs.py
+BDF2;implicite, pas fixe, deux pas;2;;;;;;integrateurs.py
+SDIRK2;implicite, pas fixe;2;;;;;;integrateurs.py
+TR-BDF2;implicite, pas fixe;2;;;;;;integrateurs.py
+RK45;explicite, pas adaptatif;5 (estimateur d'ordre 4);;;;;;scipy solve_ivp
+DOP853;explicite, pas adaptatif;8;;;;;;scipy solve_ivp
+Radau;implicite, pas adaptatif;5;;;;;;scipy solve_ivp
+BDF;implicite, pas et ordre adaptatifs;1 à 5;;;;;;scipy solve_ivp
+LSODA;bascule explicite / implicite (BDF);variable;;;;;;scipy solve_ivp
